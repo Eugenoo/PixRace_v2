@@ -38,7 +38,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.stripe5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.stripe1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stripe2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stripe3)).BeginInit();
@@ -47,7 +47,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stripe5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // stripe1
@@ -55,43 +55,43 @@
             this.stripe1.BackColor = System.Drawing.Color.White;
             this.stripe1.Location = new System.Drawing.Point(230, 0);
             this.stripe1.Name = "stripe1";
-            this.stripe1.Size = new System.Drawing.Size(10, 75);
+            this.stripe1.Size = new System.Drawing.Size(10, 85);
             this.stripe1.TabIndex = 0;
             this.stripe1.TabStop = false;
             // 
             // stripe2
             // 
             this.stripe2.BackColor = System.Drawing.Color.White;
-            this.stripe2.Location = new System.Drawing.Point(230, 141);
+            this.stripe2.Location = new System.Drawing.Point(230, 177);
             this.stripe2.Name = "stripe2";
-            this.stripe2.Size = new System.Drawing.Size(10, 75);
+            this.stripe2.Size = new System.Drawing.Size(10, 85);
             this.stripe2.TabIndex = 1;
             this.stripe2.TabStop = false;
             // 
             // stripe3
             // 
             this.stripe3.BackColor = System.Drawing.Color.White;
-            this.stripe3.Location = new System.Drawing.Point(230, 316);
+            this.stripe3.Location = new System.Drawing.Point(230, 374);
             this.stripe3.Name = "stripe3";
-            this.stripe3.Size = new System.Drawing.Size(10, 75);
+            this.stripe3.Size = new System.Drawing.Size(10, 85);
             this.stripe3.TabIndex = 2;
             this.stripe3.TabStop = false;
             // 
             // stripe4
             // 
             this.stripe4.BackColor = System.Drawing.Color.White;
-            this.stripe4.Location = new System.Drawing.Point(230, 497);
+            this.stripe4.Location = new System.Drawing.Point(230, 571);
             this.stripe4.Name = "stripe4";
-            this.stripe4.Size = new System.Drawing.Size(10, 75);
+            this.stripe4.Size = new System.Drawing.Size(10, 85);
             this.stripe4.TabIndex = 3;
             this.stripe4.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.DarkGreen;
-            this.pictureBox5.Location = new System.Drawing.Point(463, 1);
+            this.pictureBox5.Location = new System.Drawing.Point(463, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 697);
+            this.pictureBox5.Size = new System.Drawing.Size(24, 700);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             // 
@@ -128,22 +128,22 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // stripe5
+            // pictureBox3
             // 
-            this.stripe5.BackColor = System.Drawing.Color.White;
-            this.stripe5.Location = new System.Drawing.Point(230, 663);
-            this.stripe5.Name = "stripe5";
-            this.stripe5.Size = new System.Drawing.Size(10, 75);
-            this.stripe5.TabIndex = 8;
-            this.stripe5.TabStop = false;
+            this.pictureBox3.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBox3.Location = new System.Drawing.Point(333, 533);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 75);
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
             // 
             // startGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(484, 697);
-            this.Controls.Add(this.stripe5);
+            this.ClientSize = new System.Drawing.Size(484, 689);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox6);
@@ -162,7 +162,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stripe5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -178,6 +178,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox stripe5;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
