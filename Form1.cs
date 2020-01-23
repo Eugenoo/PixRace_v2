@@ -17,21 +17,19 @@ namespace PixRace_v2
         leaderboard leaderboardscreen = new leaderboard();
         public Form1()
         {
-           InitializeComponent();
+            InitializeComponent();
         }
 
         private void startGame(object sender, EventArgs e)
         {
             gamescreen.Show();
-            Hide();
+            
             
         }
 
         private void showLeaderboard(object sender, EventArgs e)
         {
             leaderboardscreen.Show();
-
-            
         }
     }
 }
