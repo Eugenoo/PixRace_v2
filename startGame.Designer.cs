@@ -243,7 +243,6 @@
             // speedTimer
             // 
             this.speedTimer.Enabled = true;
-            this.speedTimer.Interval = 1000;
             this.speedTimer.Tick += new System.EventHandler(this.speed_Tick);
             // 
             // startGame

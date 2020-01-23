@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace PixRace_v2
 {
@@ -24,6 +26,7 @@ namespace PixRace_v2
             enemy(gamespeed);
             moveline(gamespeed);
             gameover();
+            
             
             
         }
@@ -60,58 +63,61 @@ namespace PixRace_v2
             else { car3.Top += (speedlocal / 4); }
         }
 
+        void savescore()
+        {
+            string[] lines = { "First line", "Second line", "Third line" };
+            System.IO.File.WriteAllLines(@"C:\Users\admin\source\repos\scores.txt",lines);
+        }
+        void moveline2(int speed,PictureBox formStripe)
+        {
+            int speedlocal2 = speed;
+
+            if (formStripe.Top >= 699)
+            { formStripe.Top = -85; }
+            else { formStripe.Top += (speedlocal2 / 2); }
+        }
         void moveline(int speed)
         {
             int speedlocal = speed;
 
-            if (stripe1.Top >= 699)
-            { stripe1.Top = -85; }
-            else { stripe1.Top += (speedlocal / 2); } // makes stripes go slower than aproaching enemy cars
+            moveline2(speedlocal, stripe1);
+            // makes stripes go slower than aproaching enemy cars
 
-            if (stripe2.Top >= 699)
-            { stripe2.Top = -85; }
-            else { stripe2.Top += (speedlocal / 2); }
-
-            if (stripe3.Top >= 699)
-            { stripe3.Top = -85; }
-            else { stripe3.Top += (speedlocal / 2); }
-
-            if (stripe4.Top >= 699)
-            { stripe4.Top = -85; }
-            else { stripe4.Top += (speedlocal / 2); }
-
+            moveline2(speedlocal, stripe2);
+            moveline2(speedlocal, stripe3);
+            moveline2(speedlocal, stripe4);
             //if (stripe5.Top >= 700)
             //{ stripe5.Top = -85; }
             //else { stripe5.Top += speed; }
 
 
         }
-
+        void endgame()
+        {
+            timer1.Enabled = false;
+            gameOverLabel.Visible = true;
+            resumeButton.Visible = true;
+            goToMenu.Visible = true;
+            pointsTimer.Enabled = false;
+            savescore();
+        }
         void gameover()
         {
             if (playerCar.Bounds.IntersectsWith(car1.Bounds))
             {
-                timer1.Enabled = false;
-                gameOverLabel.Visible = true;
-                resumeButton.Visible = true;
-                goToMenu.Visible = true;
-                pointsTimer.Enabled = false;
+                endgame();
+              
+
             }
             if (playerCar.Bounds.IntersectsWith(car2.Bounds))
             {
-                timer1.Enabled = false;
-                gameOverLabel.Visible = true;
-                resumeButton.Visible = true;
-                goToMenu.Visible = true;
-                pointsTimer.Enabled = false;
+                endgame();
+                
             }
             if (playerCar.Bounds.IntersectsWith(car3.Bounds))
             {
-                timer1.Enabled = false;
-                gameOverLabel.Visible = true;
-                resumeButton.Visible = true;
-                goToMenu.Visible = true;
-                pointsTimer.Enabled = false;
+                endgame();
+               
             }
         }
         int gamespeed = 0;
@@ -122,6 +128,7 @@ namespace PixRace_v2
         private void resumeButton_Click(object sender, EventArgs e)
         {
             restart();
+            savescore();
             
 
         }

@@ -30,6 +30,8 @@ namespace PixRace_v2
         private void showLeaderboard(object sender, EventArgs e)
         {
             leaderboardscreen.Show();
+
+            
         }
     }
 }
