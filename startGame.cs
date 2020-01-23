@@ -34,33 +34,28 @@ namespace PixRace_v2
         Random rand = new Random();
         int x, y;
 
+        void enemymove(int speed1, PictureBox enemyCar)
+        {
+            if (enemyCar.Top >= 699)
+            {
+                x = rand.Next(30, 404);
+                y = -100;
+                enemyCar.Location = new Point(x, y);
+            }
+            else { enemyCar.Top += (speed1 / 4); }
 
+        }
         void enemy(int speed)
         {
-            int speedlocal = speed;
-            if (car1.Top >= 699)
-            {
-                x = rand.Next(30, 404);
-                y = -100;
-                car1.Location = new Point(x, y);
-            }
-            else { car1.Top += (speedlocal / 4); }
 
-            if (car2.Top >= 699)
-            {
-                x = rand.Next(30, 404);
-                y = -100;
-                car2.Location = new Point(x, y);
-            }
-            else { car2.Top += (speedlocal / 4); }
+            int speedLocal = speed;
+            enemymove(speedLocal, car1);
 
-            if (car3.Top >= 699)
-            {
-                x = rand.Next(30, 404);
-                y = -100;
-                car3.Location = new Point(x, y);
-            }
-            else { car3.Top += (speedlocal / 4); }
+            enemymove(speedLocal, car2);
+
+            enemymove(speedLocal, car3);
+
+        
         }
 
         void savescore()
