@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(startGame));
             this.stripe1 = new System.Windows.Forms.PictureBox();
             this.stripe2 = new System.Windows.Forms.PictureBox();
             this.stripe3 = new System.Windows.Forms.PictureBox();
@@ -143,37 +144,45 @@
             // 
             // playerCar
             // 
-            this.playerCar.BackColor = System.Drawing.Color.Maroon;
+            this.playerCar.BackColor = System.Drawing.Color.Transparent;
+            this.playerCar.Image = ((System.Drawing.Image)(resources.GetObject("playerCar.Image")));
             this.playerCar.Location = new System.Drawing.Point(333, 533);
             this.playerCar.Name = "playerCar";
             this.playerCar.Size = new System.Drawing.Size(50, 75);
+            this.playerCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.playerCar.TabIndex = 8;
             this.playerCar.TabStop = false;
             // 
             // car1
             // 
-            this.car1.BackColor = System.Drawing.Color.DarkMagenta;
+            this.car1.BackColor = System.Drawing.Color.Transparent;
+            this.car1.Image = ((System.Drawing.Image)(resources.GetObject("car1.Image")));
             this.car1.Location = new System.Drawing.Point(56, 533);
             this.car1.Name = "car1";
             this.car1.Size = new System.Drawing.Size(50, 75);
+            this.car1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.car1.TabIndex = 9;
             this.car1.TabStop = false;
             // 
             // car2
             // 
-            this.car2.BackColor = System.Drawing.Color.Purple;
+            this.car2.BackColor = System.Drawing.Color.Transparent;
+            this.car2.Image = ((System.Drawing.Image)(resources.GetObject("car2.Image")));
             this.car2.Location = new System.Drawing.Point(56, 316);
             this.car2.Name = "car2";
             this.car2.Size = new System.Drawing.Size(50, 75);
+            this.car2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.car2.TabIndex = 10;
             this.car2.TabStop = false;
             // 
             // car3
             // 
-            this.car3.BackColor = System.Drawing.Color.Purple;
+            this.car3.BackColor = System.Drawing.Color.Transparent;
+            this.car3.Image = ((System.Drawing.Image)(resources.GetObject("car3.Image")));
             this.car3.Location = new System.Drawing.Point(56, 88);
             this.car3.Name = "car3";
             this.car3.Size = new System.Drawing.Size(50, 75);
+            this.car3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.car3.TabIndex = 11;
             this.car3.TabStop = false;
             // 
@@ -270,6 +279,7 @@
             this.Controls.Add(this.stripe1);
             this.Name = "startGame";
             this.Text = "startGame";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.startGame_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.startGame_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.stripe1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stripe2)).EndInit();

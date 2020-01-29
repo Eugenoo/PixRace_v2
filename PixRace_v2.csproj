@@ -98,6 +98,7 @@
     </Compile>
     <EmbeddedResource Include="startGame.resx">
       <DependentUpon>startGame.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -210,7 +210,10 @@ namespace PixRace_v2
             }
         }
 
-        
+        private void startGame_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
 
         private void startGame_KeyDown(object sender, KeyEventArgs e)
         {
@@ -229,7 +232,7 @@ namespace PixRace_v2
             //moving foward & back
 
             if (e.KeyCode == Keys.Up)
-                if (gamespeed <= 32)
+                if (gamespeed <= 100)
                 {
                     gamespeed++;
                 }
