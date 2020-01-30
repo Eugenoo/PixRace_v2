@@ -232,9 +232,12 @@
             // pointsLabel
             // 
             this.pointsLabel.AutoSize = true;
-            this.pointsLabel.Location = new System.Drawing.Point(393, 31);
+            this.pointsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.pointsLabel.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pointsLabel.ForeColor = System.Drawing.Color.Orange;
+            this.pointsLabel.Location = new System.Drawing.Point(304, 28);
             this.pointsLabel.Name = "pointsLabel";
-            this.pointsLabel.Size = new System.Drawing.Size(56, 13);
+            this.pointsLabel.Size = new System.Drawing.Size(120, 29);
             this.pointsLabel.TabIndex = 15;
             this.pointsLabel.Text = "LETS GO!";
             this.pointsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -242,9 +245,12 @@
             // speedLabel
             // 
             this.speedLabel.AutoSize = true;
-            this.speedLabel.Location = new System.Drawing.Point(370, 657);
+            this.speedLabel.BackColor = System.Drawing.Color.Transparent;
+            this.speedLabel.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.speedLabel.ForeColor = System.Drawing.Color.Crimson;
+            this.speedLabel.Location = new System.Drawing.Point(275, 651);
             this.speedLabel.Name = "speedLabel";
-            this.speedLabel.Size = new System.Drawing.Size(79, 13);
+            this.speedLabel.Size = new System.Drawing.Size(133, 29);
             this.speedLabel.TabIndex = 16;
             this.speedLabel.Text = "SPEED 0 MPH";
             this.speedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

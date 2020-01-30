@@ -215,6 +215,13 @@ namespace PixRace_v2
             Application.Exit();
         }
 
+       // private void startGame_Load(object sender, EventArgs e)
+       // {
+       //     pointsLabel.Parent = startGame.;
+      //      pointsLabel.BackColor = Color.Transparent; 
+       //     
+       // }
+
         private void startGame_KeyDown(object sender, KeyEventArgs e)
         {
             //moving left & right
